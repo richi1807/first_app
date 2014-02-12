@@ -21,6 +21,8 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'rails_12factor', group: :production
+
 group :production do
   gem 'pg' # dont want sqlite in production
   gem 'unicorn' # make sure you follow installation instructions for this gem
